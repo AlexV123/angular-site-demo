@@ -16,4 +16,4 @@ import {ShoppingListRoutingModule} from "./shopping-list-routing.module";
     ShoppingEditComponent
   ]
 })
-export class ShoppingListModule { }
+export class ShoppingListModule {}
