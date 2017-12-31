@@ -7,6 +7,8 @@ import {SharedModule} from "./shared/shared.module";
 import {AuthModule} from "./auth/auth.module";
 import {CoreModule} from "./core/core.module";
 import {HttpClientModule} from '@angular/common/http';
+import {StoreModule} from "@ngrx/store";
+import { reducers } from './store/app.reducers';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     SharedModule,
     AuthModule,
-    CoreModule
+    CoreModule,
+    StoreModule.forRoot(reducers)
   ],
   bootstrap: [AppComponent]
 })
