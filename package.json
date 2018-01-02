@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ssr": "ng build --prod && ng build --prod --app 1 --output-hashing=none",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -18,6 +19,7 @@
     "@angular/core": "^5.1.2",
     "@angular/forms": "^5.1.2",
     "@angular/http": "^5.1.2",
+    "@angular/material": "^5.0.3",
     "@angular/platform-browser": "^5.1.2",
     "@angular/platform-browser-dynamic": "^5.1.2",
     "@angular/platform-server": "^5.1.2",
@@ -26,10 +28,15 @@
     "@ngrx/router-store": "^4.1.1",
     "@ngrx/store": "^4.1.1",
     "@ngrx/store-devtools": "^4.1.1",
+    "@nguniversal/express-engine": "^5.0.0-beta.5",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "firebase": "4.8.0",
     "rxjs": "^5.5.6",
+    "ts-loader": "^3.2.0",
+    "xmlhttprequest": "^1.8.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

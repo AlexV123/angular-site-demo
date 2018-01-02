@@ -13,13 +13,15 @@ import {AuthEffects} from "./auth/store/auth.effects";
 import {StoreRouterConnectingModule} from "@ngrx/router-store";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import { environment } from './../environments/environment';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserAnimationsModule,
+    BrowserModule.withServerTransition({appId: 'angular-universal-demo'}),
     AppRoutingModule,
     HttpClientModule,
     SharedModule,

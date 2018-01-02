@@ -3,6 +3,7 @@ import { CanLoad, Route } from "@angular/router";
 import {Store} from "@ngrx/store";
 import * as fromApp from '../store/app.reducers';
 import * as fromAuth from './store/auth.reducers';
+import 'rxjs/add/operator/first';
 
 @Injectable()
 export class AuthGuardService implements CanLoad {
